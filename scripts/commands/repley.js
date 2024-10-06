@@ -1,14 +1,13 @@
-const fs = require("fs");
 module.exports.config = {
-  name: "ripley1",
-  version: "2.0.1",
-  permission: 0,
-  credits: "Farhan",
-  description: "noprefix",
-  prefix: false,
-  category: "user",
-  usages: "",
-  cooldowns: 5,
+	name: "Reply",
+	version: "1.0.2",
+	permission: 2,
+	credits: "nayan",
+	prefix: false,
+	description: "",
+	category: "without prefix",
+	usages: "[tag]",
+	cooldowns: 5
 };
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
@@ -44,16 +43,16 @@ react.includes("bal") ||
 react.includes("খাংকির পোলা") ||
 react.includes("খানকি মাকি") ||
 react.includes("খানকি মাগি") || 
-react.includes("বেশ্যা") || 
+react.includes("SawYa") || 
 react.includes("Sawya") || 
 react.includes("tor mare xudi") || react.includes("vuda") || react.includes("heda") || react.includes("bap")) {
 		var msg = {
-				body: "- এখানে গালাগালি করিস না😾 Owner:-𝐉𝐮𝐛𝐚𝐲𝐞𝐫 𝐚𝐡𝐦𝐞𝐝-!!"
+				body: "━━━━━━━━━━━━━━━━━━━━\n╭┈ ❒ 💬 | 𝐌𝐄𝐒𝐒𝐄𝐆𝐄:\n╰┈➤ এখানে গালাগালি করলে মুখ সেলাই কইরা দিমু..!!😾━━━━━━━━━━━━━━━━━━━━━━\n✿◕𝐁𝐎𝐓-𝐎𝐖𝐍𝐄𝐑: 𝐌𝐎𝐇𝐀𝐌𝐌𝐀𝐃 𝐉𝐔𝐁𝐀𝐘𝐄𝐑◕✿🌚!!😾"
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🤬", event.messageID, (err) => {}, true)
+    api.setMessageReaction("😾", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
 
-  }
+     }
